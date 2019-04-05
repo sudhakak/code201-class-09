@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Salmon Cookie Stand
+        </title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+                <p>
+                        <img src="https://via.placeholder.com/900x90">
+                    </p>
+
+        </header>
+        <main>
+                <h1>
+                        <ul>
+                            <li><a href="index.html" >Go --> Salmon Cookie Home</a></li>
+                        </ul>
+                    </h1>
+                    
+                    <form id="SalesInputForm">
+                        <label>Fill the location data and click on 'Add Location' to get the metrix data for each day</label>
+                        <fieldset>
+                            <label for="lblLocationName">Location Name: </label>
+                            <input type="text" id="inputIDForLocation" required name="lblLocationName" placeholder="Enter Location Name...">
+                        </fieldset>
+                        <fieldset>
+                            <label for="lblMinimumHourlyCustomers">Minimum Hourly Customers:</label>
+                            <input type="number" id="inputIDForMinimumHourlyCustomers" required name="lblMinimumHourlyCustomers" 
+                            placeholder="Enter Minimum Houly Customers..." value=0 >
+                        </fieldset>
+                        <fieldset>
+                            <label for="lblMaximumHourlyCustomers">Maximum Hourly Customers:</label>
+                            <input type="number" id="inputIDForMaximumHourlyCustomers" required name="lblMaximumHourlyCustomers" 
+                            placeholder="Enter Maximum Houly Customers..." value=0>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="lblAverageCookieCount">Average Cookies Per Customer:</label>
+                            <input type="number" step="0.01" id="inputIDForAverageCookie" required name="lblAverageCookieCount" 
+                            placeholder="Enter Average Cookie Per Customer..." value=0>
+                        </fieldset>
+                        <input type="submit" id="SalesSubmit" value="Add Location">
+
+                    </form>
+            <table Id="cookieResults">
+                    <thead Id="tHeading"> </thead>
+                    <tbody id="shell"></tbody>
+                    <tfoot id="footerTotals"></tfoot>
+             </table>
+        </main>
+        <script src="js/app.js"></script>
+    </body>
+</html>

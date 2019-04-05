@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Salmon Cookie Stand
+        </title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <p>
+                    <img src="https://via.placeholder.com/900x90">
+            </p>
+            </h1>
+            
+            <nav>
+                <ul id="nav">
+                     <li><a href="#aboutus" onclick="showAboutUs()">About Us</a></li>
+                     <li><a href="#location" onclick="showLocations()">Locations</a></li>
+                     <li><a href="#hours" onclick="showHours()">Hours</a></li>                        
+                     <li><a href="sales.html">Sales Data</a></li>
+                     <li><a href="#contactus" onclick="showContactUs()">Contact Us</a></li>
+                     
+                   <!-- <li><a href="sales.html"></a> </li> -->
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+                <div id="aboutus" class="toggle" style="display:none">  
+                        <h2>A golden biscuit with the richness of pure, creamery butter, that melts in your 
+                            mouth.</h2>
+                        <h2>Ingredients:</h2>
+                            <h3 id="head3">
+                                <ul>
+                                    <li>Wheat flour, butter, sugar, Ground Salmon</li>
+                                    <li> Contains wheat, almonds, hazelnuts milk and eggs.</li>                                                                                         
+                                </ul>
+                            </h3>
+
+                            <h2>Nutritional Facts:</h2>
+                            <h3 id="head3">
+                                <ul>
+                                    <li>Total 150 Calories from one cookie (50 grams), other facts are below</li>
+                                    <li>Trans Fat Fat 5g        -> 10% </li>
+                                    <li>Saturated Fat 3g        -> 7% </li>
+                                    <li>Corbs 10g               -> 20% </li>                    
+                                    <li>Sodium 250mg            -> 0.5% </li> 
+                                    <li>Fiber 4g                -> 8% </li> 
+                                    <li>Protein 1g              -> 2% </li>
+                                </ul>
+                            </h3>
+                </div>
+                <div id="location" class="toggle" style="display:none">
+                        <h2>Locations</h2>
+                        <h3 id="head3">
+                            <ul>
+                                <li>Pike Place Market</li>
+                                <li>SeaTac Airport</li>
+                                <li>Seattle Center</li>
+                                <li>East Side</li>
+                                <li>West Side</li> 
+                            </ul>
+
+                        </h3>
+                </div>
+                <div id="hours" class="toggle" style="display:none">
+                        <h2>Total Hours</h2>
+                        <h3 id="head3">
+                                <ul>
+                                        <ul>
+                                                <li>M-F : 6AM - 8PM</li>
+                                                <li>Saturday: 6AM - 8PM</li>
+                                                <li>Sunday: 6AM - 8PM</li>                                    
+                                        </ul>
+                                </ul>
+    
+                            </h3>
+                </div>
+                <div id="specials" class="toggle" style="display:none">
+                        <h2>
+                             <li><a href="sales.html">Vishwaroop Data</a> </li>
+                        </h2>
+                </div>
+                <div id="contactus" class="toggle" style="display:none">
+                    <h2>Call us @ 111-222-3333</h2>
+                </div>
+             
+        </main>
+        <script src="js/app.js"></script>
+    </body>
+</html>
